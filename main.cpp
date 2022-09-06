@@ -3,4 +3,4 @@
 //
 #include <iostream>
 
-int main() { stdout::cout << "Hello!\n"; return 0; }
+int main() { std::cout << "Hello!\n"; return 0; }
