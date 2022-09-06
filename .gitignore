@@ -1,2 +1,5 @@
 # JetBrains
 .idea
+
+# CMake Results
+out
