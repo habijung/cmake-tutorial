@@ -61,3 +61,28 @@ $ mingw32-make
 [100%] Linking CXX executable tutorial.exe
 [100%] Built target tutorial
 ```
+
+## Windows용 make 설치
+
+- [How to Install and Use “Make” in Windows](https://www.technewstoday.com/install-and-use-make-in-windows/)
+- [How to install and use "make" in Windows?](https://stackoverflow.com/questions/32127524/how-to-install-and-use-make-in-windows)
+
+위에 두 글 중에서 아무거나 참고해서 `GnuWin32`를 설치해준다.
+
+1번 글은 `cmd`에서 `Winget`으로 설치하는 방법이고, 2번 글은 `Chocolatey`를 통해서 설치하는 방법이다. 그냥 아무거나 쓰면 될 듯 싶지만,
+그래도 말하자면 나는 1번으로 설치했다.
+
+설치하면 이제 `make.exe`를 실행할 수 있는데, 물론 그전에 환경 변수 세팅을 해줘야한다.
+
+`시작 > 시스템 환경 변수 편집 > 환경 변수 > 시스템 변수 > Path`에서 `C:\Program Files (x86)\GnuWin32\bin`을 등록해주면 된다.
+
+물론 여기에서 문제가 있다. Windows는 기본적으로 Visual Studio를 받아오고 있어서 `make`를 써보면 아래 문제가 생긴다.
+```commandline
+$ make
+bash: ./make.bat: No such file or directory
+```
+
+그렇다면, 그냥 `make.exe`를 alias를 통해서 `make`로 세팅해주자.
+```text
+alias make="make.exe"
+```
