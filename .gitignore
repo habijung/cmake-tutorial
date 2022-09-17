@@ -4,3 +4,6 @@
 # CMake Results
 out
 cmake-build-debug
+
+# Mac OS
+.DS_Store
