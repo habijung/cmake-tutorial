@@ -11,7 +11,7 @@
 
 [Windows](#Windows)
 
-[MacOS & Linux](#MacOS-&-Linux)
+[MacOS & Linux](#MacOS--Linux)
 
 ## Windows
 
